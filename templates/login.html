@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<h1>AWS ASSIGNMENT</h1>
+<form enctype="multipart/form-data" name="myForm" id="myForm" method = "post" action = "/login/">
+				<div class="form-group">
+                    <table>
+                    <tr>
+                        <td>
+                        Username: <input type="text" name="u_name" id="u_name"/>
+                        </td></tr>
+                        <tr>
+                    <td>
+                    Password: <input type="password" name="u_pass" id="u_pass"/>
+                    </td>
+                    </tr>
+                    </table>
+                </div>
+				<input type = "submit" value = "Login" id = "submit" class="btn btn-default"/>
+            {% if msg  %}
+             <p>{{ msg }}</p>
+            {% endif %}
+
+
+         </form>
+
+</body>
+</html>

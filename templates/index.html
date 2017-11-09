@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Python Flask Starter Application</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/stylesheets/style.css">
+
+  </head>
+
+  <body>
+
+	<div id="nav">
+          <h1> <span class = "blue">PYTHON FLASK APPLICATION</span> </h1>
+          <ul>
+      <li><a href="/">Upload</a></li>
+      <li><a href="/view/">View Files</a></li>
+  </ul>
+      </div>
+    <table>
+      <tr>
+        <td style= "width:30%;">
+          <img class = "newappIcon" src="../static/images/newapp-icon.png">
+		</td>
+
+		<td>
+            <h1>Upload Files to S3</h1>
+			<form enctype="multipart/form-data" name="myForm" id="myForm" method = "post" action = "/upload/">
+				<div class="form-group">
+				  <input class="form-control" name="myFile" id = "fileupload" type = "file"/>
+
+				</div>
+				<input type = "submit" value = "Submit" id = "submit" class="btn btn-default"/>
+			</form>
+		</td>
+	   </tr>
+    </table>
+  </body>
+</html>
